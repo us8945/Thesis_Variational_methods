@@ -1,7 +1,5 @@
 '''
-Created on Feb 19, 2017
-
-@author: UriS
+@author: Uri Smashnov
 
 -- Add Z calculation using Beth energy approximation
 
