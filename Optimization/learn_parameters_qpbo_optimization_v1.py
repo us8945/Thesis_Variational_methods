@@ -363,7 +363,7 @@ def calculate_edge_prob(state_i, state_j, node_i_flag, node_j_flag,edge_paramete
     #print('Edge params:', edge_parameters)
     #prob = state_flag_dict_a_zero[(state_i, state_j, node_i_flag, node_j_flag)]
     
-    if (edge_parameters[0]*edge_parameters[3]) >= (edge_parameters[1]*edge_parameters[2]): #if 00*11 >=01*10
+    if (edge_parameters[0]+edge_parameters[3]) >= (edge_parameters[1]+edge_parameters[2]): #if 00*11 >=01*10
         prob = state_flag_dict_a_zero[(state_i, state_j, node_i_flag, node_j_flag)]
         #print('Edge0:',edge_parameters,(state_i, state_j, node_i_flag, node_j_flag),'Prob:',prob)
     else:
